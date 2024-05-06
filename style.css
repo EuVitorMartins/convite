@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E1F5FC;
+    overflow-x: hidden;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Poetsen One", sans-serif;
+    color: #003C58;
+    font-size: 2em;
+    text-align: center;
+}
+
+header {
+    position: relative;
+    width: 100vw;
+}
+p span{
+    text-decoration: underline;
+}
+.imagem-fundo {
+    object-fit: cover;
+    width: 100vw;
+}
+
+.nome {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+}
+
+.conteiner { 
+    width: 100vw;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box1 {
+    background-color: #F3D426;
+    width: 50%;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.btns {
+    margin: 50px 0;
+    display: flex;
+    gap: 50px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 25px 0;
+}
+
+.titulo img {
+    width: 80px;
+    padding-right: 15px;
+}
+
+.titulo h1 {
+    text-transform: uppercase;
+}
+
+
+
+.presentes {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 100px;
+}
+
+.presentes img{
+    width: 300px;
+    margin: 25px;
+}
+
+.fraldas, .mimo,.horario, .endereco, .map{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+    position: relative;
+}
+
+.fraldas{
+    position: relative;
+}
+
+.fraldas span{
+    color: #003c585f;
+}
+.map a{
+    font-size: 17px;
+    color: #003c585f;
+    
+}
+
+.fraldas::before{
+    transform: translateY(-50%);
+    content: "+";
+    font-size: 5em;
+    position: absolute;
+    bottom: -65%;
+    right: 40%;
+}
+
+.box1.segundo{
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.endereco .box1.segundo{
+    text-align: left;
+}
+
+.endereco-texto{
+    margin-top: 30px;
+    text-align: right;
+}
+
+
+
+.foguete2{
+    position: relative;
+}
+ .foguete2 img{
+    transform: rotate(81deg);
+    position: absolute;
+    left: -412px;
+    top: 0%;
+}
+.planeta{
+    position: absolute;
+    left: -88px;
+    top: -56px;
+}
+
+.astra{
+    position: relative;
+    height: 150px;
+}
+
+.astra img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    height: 250px;
+}
+
+
+@media (max-width: 500px)  {
+    .box1{
+        width: 80%;
+    }
+
+    .nome{
+        width: 300px;
+        top: 107px;
+    }
+}
